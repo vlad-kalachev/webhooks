@@ -379,6 +379,10 @@ type CheckSuitePayload struct {
 		Type              string `json:"type"`
 		SiteAdmin         bool   `json:"site_admin"`
 	} `json:"sender"`
+	Installation struct {
+		ID     int64  `json:"id"`
+		NodeID string `json:"node_id"`
+	} `json: "installation"`
 }
 
 // CommitCommentPayload contains the information for GitHub's commit_comment hook event
