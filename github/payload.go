@@ -207,6 +207,10 @@ type CheckRunPayload struct {
 		Type              string `json:"type"`
 		SiteAdmin         bool   `json:"site_admin"`
 	} `json:"sender"`
+	Installation struct {
+		ID     int64  `json:"id"`
+		NodeID string `json:"node_id"`
+	} `json: "installation"`
 }
 
 // CheckSuitePayload contains the information for GitHub's check_suite hook event
